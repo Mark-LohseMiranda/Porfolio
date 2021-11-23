@@ -1,0 +1,35 @@
+.col-sm-8 img {
+  border-radius: 25px;
+}
+
+.col-sm-4 p {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.zoom {
+  transform: scale(1.5);
+  transition: transform 1s ease-in-out;
+}
+
+.zoomback {
+  transform: scale(1);
+  transition: transform 1s ease-in-out;
+}
+
+.legend {
+  background-color: blue !important;
+  border-radius: 30% 70% 70% 30% / 31% 50% 50% 69% !important;
+  font-size: 2em !important;
+}
+
+#bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+
+#bottom a {
+    color: white;
+}

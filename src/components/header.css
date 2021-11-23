@@ -1,0 +1,17 @@
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.namedraw {
+  display: block;
+  margin: auto;
+}
+
+#name {
+  margin: 0;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
