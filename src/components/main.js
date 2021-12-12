@@ -109,7 +109,6 @@ function Main() {
   }
 
   function clickSlide(e) {
-    console.log(e)
     switch (e) {
       case 0:
         window.open(
