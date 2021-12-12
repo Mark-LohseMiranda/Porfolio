@@ -3,7 +3,6 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import "./main.css";
 
-
 function Main() {
   const [reactActive, setReactActive] = useState(false);
   const [css3Active, setCSS3Active] = useState(false);
@@ -40,6 +39,9 @@ function Main() {
       case 0:
         setAllFalse();
         setTimeout(() => {
+          setReactActive(true);
+          setGithubActive(true);
+          setBootstrapActive(true);
           setJavascriptActive(true);
           setExpressActive(true);
           setNodeActive(true);
@@ -50,6 +52,16 @@ function Main() {
       case 1:
         setAllFalse();
         setTimeout(() => {
+          setJavascriptActive(true);
+          setExpressActive(true);
+          setNodeActive(true);
+          setMysqlActive(true);
+          setSequelizeActive(true);
+        }, 1000);
+        break;
+      case 2:
+        setAllFalse();
+        setTimeout(() => {
           setCSS3Active(true);
           setJavascriptActive(true);
           setGitActive(true);
@@ -57,7 +69,7 @@ function Main() {
           setExpressActive(true);
         }, 1000);
         break;
-      case 2:
+      case 3:
         setAllFalse();
         setTimeout(() => {
           setCSS3Active(true);
@@ -66,7 +78,7 @@ function Main() {
           setGitActive(true);
         }, 1000);
         break;
-      case 3:
+      case 4:
         setAllFalse();
         setTimeout(() => {
           setJavascriptActive(true);
@@ -75,7 +87,7 @@ function Main() {
           setCSS3Active(true);
         }, 1000);
         break;
-      case 4:
+      case 5:
         setAllFalse();
         setTimeout(() => {
           setJavascriptActive(true);
@@ -83,7 +95,7 @@ function Main() {
           setCSS3Active(true);
         }, 1000);
         break;
-      case 5:
+      case 6:
         setAllFalse();
         setTimeout(() => {
           setJavascriptActive(true);
@@ -97,38 +109,51 @@ function Main() {
   }
 
   function clickSlide(e) {
+    console.log(e)
     switch (e) {
       case 0:
         window.open(
-          "https://github.com/Mark-LohseMiranda/bulletjournal",
-          "_blank"
+          "https://github.com/Mark-LohseMiranda/TableTop-FrontEnd",
+          "_blank",
+          "noreferrer"
         );
         break;
       case 1:
         window.open(
-          "https://github.com/Mark-LohseMiranda/trackiest-budget-tracker",
-          "_blank"
+          "https://github.com/Mark-LohseMiranda/bulletjournal",
+          "_blank",
+          "noreferrer"
         );
         break;
       case 2:
         window.open(
-          "https://github.com/Mark-LohseMiranda/ExerciseIsFun",
-          "_blank"
+          "https://github.com/Mark-LohseMiranda/trackiest-budget-tracker",
+          "_blank",
+          "noreferrer"
         );
         break;
       case 3:
         window.open(
-          "https://github.com/Mark-LohseMiranda/weather-dashboard",
-          "_blank"
+          "https://github.com/Mark-LohseMiranda/ExerciseIsFun",
+          "_blank",
+          "noreferrer"
         );
         break;
       case 4:
         window.open(
-          "https://github.com/Mark-LohseMiranda/password-generator",
-          "_blank"
+          "https://github.com/Mark-LohseMiranda/weather-dashboard",
+          "_blank",
+          "noreferrer"
         );
         break;
       case 5:
+        window.open(
+          "https://github.com/Mark-LohseMiranda/password-generator",
+          "_blank",
+          "noreferrer"
+        );
+        break;
+      case 6:
         window.open("https://github.com/Mark-LohseMiranda/code-quiz", "_blank");
         break;
       default:
@@ -139,7 +164,7 @@ function Main() {
   return (
     <div className="container">
       <div className="row">
-        <div className="col-sm-4">
+        <div className="col-sm-12 col-md-4">
           <svg
             data-name="Layer 1"
             xmlns="http://www.w3.org/2000/svg"
@@ -231,27 +256,34 @@ function Main() {
             src="https://img.shields.io/badge/-Sequelize-52B0E7?style=plastic&logo=sequelize"
             alt="sequelize badge"
           />
-          <p>
-            I have dabbled with web development since the late 90s. Having
-            worked in various government jobs for 20 years, I recently decided
-            to turn my coding passion into full time job.
-          </p>
+          <div className="bio">
+            <p>
+              I have dabbled with web development since the late 90s. Having
+              worked in various government jobs for 20 years, I recently decided
+              to turn my coding passion into full time job.
+            </p>
 
-          <p>
-            I reside with my spouse and two children outside of Tacoma,
-            Washington. I am currently broadening my mind attending a Full Stack
-            bootcamp hosted by University of Washington.
-          </p>
+            <p>
+              I reside with my spouse and two children outside of Tacoma,
+              Washington. I am currently broadening my mind attending a Full
+              Stack bootcamp hosted by University of Washington.
+            </p>
+          </div>
         </div>
-        <div className="col-sm-8">
+        <div className="col-sm-12 col-md-8">
           <Carousel
             infiniteLoop
             autoPlay
+            animationHandler="fade"
             interval="5000"
             transitionTime="650"
             onChange={changeSlide}
             onClickItem={clickSlide}
           >
+            <div>
+              <img alt="tabletop" src="./images/tabletop-screenshot.png" />
+              <p className="legend">TableTop</p>
+            </div>
             <div>
               <img alt="bullet journal" src="./images/bulletjournal.png" />
               <p className="legend">Bullet Journal</p>
@@ -291,7 +323,7 @@ function Main() {
       <div className="row">
         <div id="bottom" className="container">
           <div className="col-sm-4">
-            <a href="http://www.scouting.org/" target="_blank">
+            <a href="http://www.scouting.org/" target="_blank" rel="noreferrer">
               <div>
                 <img alt="boy scouts of america" src="./images/bsa.png"></img>
               </div>
@@ -299,7 +331,7 @@ function Main() {
             </a>
           </div>
           <div className="col-sm-4">
-            <a href="http://www.marines.com/" target="_blank">
+            <a href="http://www.marines.com/" target="_blank" rel="noreferrer">
               <div>
                 <img alt="usmc" src="./images/usmc.png"></img>
               </div>
@@ -307,7 +339,11 @@ function Main() {
             </a>
           </div>
           <div className="col-sm-4">
-            <a href="http://www.gocoastguard.com/" target="_blank">
+            <a
+              href="http://www.gocoastguard.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <div>
                 <img alt="uscg" src="./images/uscg.png"></img>
               </div>

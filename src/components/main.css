@@ -1,4 +1,18 @@
-.col-sm-8 img {
+img {
+  border-radius: 15px;
+}
+
+.carousel.carousel-slider li.slide.selected {
+  z-index: 0 !important;
+  cursor: pointer;
+}
+
+.bio {
+  background-color: rgba(0,  0, 0, .7);
+  color: white;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   border-radius: 25px;
 }
 
@@ -18,8 +32,9 @@
 }
 
 .legend {
-  background-color: blue !important;
-  border-radius: 30% 70% 70% 30% / 31% 50% 50% 69% !important;
+  background-color:black !important;
+  border-radius: 25%;
+  box-shadow: 10px red !important;
   font-size: 2em !important;
 }
 
