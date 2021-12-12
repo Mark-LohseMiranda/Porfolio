@@ -278,6 +278,7 @@ function Main() {
             transitionTime="650"
             onChange={changeSlide}
             onClickItem={clickSlide}
+            swipeable="false"
           >
             <div>
               <img alt="tabletop" src="./images/tabletop-screenshot.png" />
