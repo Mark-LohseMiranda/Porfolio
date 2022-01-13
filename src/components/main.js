@@ -264,8 +264,10 @@ function Main() {
 
             <p>
               I reside with my spouse and two children outside of Tacoma,
-              Washington. I am currently broadening my mind attending a Full
-              Stack bootcamp hosted by University of Washington.
+              Washington. I obtained a certificate in Full Stack
+              Web Development from the University of Washington. I am 
+              currently volunteering my time with catchafire.org building
+              applications for non-profits. 
             </p>
           </div>
         </div>
