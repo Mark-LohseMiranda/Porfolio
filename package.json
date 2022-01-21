@@ -11,6 +11,7 @@
     "dotenv": "^10.0.0",
     "framer-motion": "^5.3.1",
     "react": "^17.0.2",
+    "react-bootstrap": "^2.1.1",
     "react-dom": "^17.0.2",
     "react-ga": "^3.3.0",
     "react-intersection-observer": "^8.32.3",

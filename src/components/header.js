@@ -6,9 +6,10 @@ function topName() {
   return (
     <div id="top" className="container">
       <div className="contact">
-        <a href="https://github.com/mark-lohsemiranda" target="_blank" rel="noreferrer"><img alt="github" src="./images/GitHub-Mark-64px.png"/></a>
-        <a href="https://www.linkedin.com/in/mark-lohse-miranda/" target="_blank" rel="noreferrer"><img alt="linkedin" src="./images/linkedin.png"/></a>
-        <a href="mailto:mark.lohsemiranda@gmail.com"><img alt="email" src="./images/email.png"/></a>
+        <a href="https://github.com/mark-lohsemiranda" target="_blank" rel="noreferrer"><img alt="github" src="./images/GitHub-Mark-64px.png"/><p>GitHub</p></a>
+        <a href="https://www.linkedin.com/in/mark-lohse-miranda/" target="_blank" rel="noreferrer"><img alt="linkedin" src="./images/linkedin.png"/><p>LinkedIn</p></a>
+        <a href="./resume/Mark-Lohse-Miranda-Resume.pdf" target="_blank" rel="noreferrer"><img alt="resume" src="./images/resume.png"/><p>My Resume</p></a>
+        <a href="mailto:mark.lohsemiranda@gmail.com"><img alt="email" src="./images/email.png"/><p>Email me!</p></a>
 
       </div>
       <div className="nameDraw">
