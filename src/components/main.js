@@ -226,7 +226,7 @@ function Main() {
                   </a>{" "}
                   |{" "}
                   <a
-                    href="https://table-top-fe.herokuapp.com/"
+                    href="http://markl-m.me/TableTop"
                     rel="noreferrer"
                     target="_blank"
                   >
@@ -257,7 +257,7 @@ function Main() {
                   </a>{" "}
                   |{" "}
                   <a
-                    href="https://bullet-journal-squared.herokuapp.com/"
+                    href="https://markl-m.me/bulletjournal2"
                     rel="noreferrer"
                     target="_blank"
                   >
@@ -288,7 +288,7 @@ function Main() {
                   </a>{" "}
                   |{" "}
                   <a
-                    href="https://trackiest-budget-tracker.herokuapp.com/"
+                    href="https://markl-m.me/budget"
                     rel="noreferrer"
                     target="_blank"
                   >
@@ -320,7 +320,7 @@ function Main() {
                   </a>{" "}
                   |{" "}
                   <a
-                    href="https://willowsmith.github.io/ExerciseIsFun/"
+                    href="https://markl-m.me/exerciseisfun"
                     rel="noreferrer"
                     target="_blank"
                   >
@@ -352,7 +352,7 @@ function Main() {
                   </a>{" "}
                   |{" "}
                   <a
-                    href="https://mark-lohsemiranda.github.io/weather-dashboard/"
+                    href="https://markl-m.me/weather"
                     rel="noreferrer"
                     target="_blank"
                   >
